@@ -488,3 +488,23 @@
   [data-aos="fade-up"] {
     transform: translate3d(0, 30px, 0);
   }
+  .about-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .about-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Ensures the image doesn’t become too large */
+    object-fit: cover; /* Ensures the image fills the space while maintaining aspect ratio */
+  }
+  
+  @media (max-width: 768px) {
+    .about-img {
+      max-height: 300px;
+    }
+  }
+  
